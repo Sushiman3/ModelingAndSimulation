@@ -28,6 +28,6 @@ for i in range(3):
     y_pred = poly.transform(x0) @ theta[i] # 回帰曲線の予測値
     plt.plot(x0, y_pred, label=f'Ridge Regression (alpha={alpha[i]})', color=color_list[i]) # 回帰曲線をプロット
 plt.legend()
-plt.xlabel('degree'); plt.ylabel('train/validation error')
+plt.xlabel('x'); plt.ylabel('y')
 plt.savefig('week6/images/ridge_regression.png') # グラフを保存
 plt.show()
