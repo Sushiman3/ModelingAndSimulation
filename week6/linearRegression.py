@@ -16,9 +16,8 @@ print(x)
 # %%
 
 # Preprocess the data
-from sklearn.preprocessing import add_dummy_feature, PolynomialFeatures
+from sklearn.preprocessing import add_dummy_feature
 x_original = x.copy()
-x = PolynomialFeatures(degree=1, include_bias=False).fit_transform(x)
 x = add_dummy_feature(x, value=1)
 print(x)
 
